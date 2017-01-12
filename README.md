@@ -21,6 +21,18 @@ The interface is very similar to MATLAB’s Statistics Toolbox API to make code 
 port from MATLAB to Python/NumPy. The core implementation of this library is in C++ for efficiency.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fastcluster-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fastcluster-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/fastcluster-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fastcluster-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fastcluster-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fastcluster-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fastcluster/badges/version.svg)](https://anaconda.org/conda-forge/fastcluster)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fastcluster/badges/downloads.svg)](https://anaconda.org/conda-forge/fastcluster)
+
 Installing fastcluster
 ======================
 
@@ -41,7 +53,6 @@ It is possible to list all of the versions of `fastcluster` available on your pl
 ```
 conda search fastcluster --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -77,18 +88,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fastcluster-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fastcluster-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fastcluster-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fastcluster-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fastcluster-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fastcluster-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fastcluster/badges/version.svg)](https://anaconda.org/conda-forge/fastcluster)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fastcluster/badges/downloads.svg)](https://anaconda.org/conda-forge/fastcluster)
 
 
 Updating fastcluster-feedstock
