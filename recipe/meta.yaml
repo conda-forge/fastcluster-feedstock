@@ -1,6 +1,6 @@
 {% set name = "fastcluster" %}
-{% set version = "1.1.21" %}
-{% set sha256 = "c0f7c234a93d5414e9b1300b17ec5c82bd9a9e4c210fc5d9bc3e2bc82fced989" %}
+{% set version = "1.1.23" %}
+{% set sha256 = "dfcd192d4cd53cd0db27f9d86dc3c49d3a15e6114ff875428c367b8bd679e318" %}
 
 package:
   name: {{ name|lower }}
