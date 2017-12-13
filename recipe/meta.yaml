@@ -1,6 +1,6 @@
 {% set name = "fastcluster" %}
-{% set version = "1.1.23" %}
-{% set sha256 = "dfcd192d4cd53cd0db27f9d86dc3c49d3a15e6114ff875428c367b8bd679e318" %}
+{% set version = "1.1.24" %}
+{% set sha256 = "a5d1922b1db6f4c3012416e7dc14de2984b9335a48c895e1698afd5c718312b0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/1e/00/9910dd324f32582051d0ee6922c3cd4727234aae96366f3867c46a70cd78/fastcluster-1.1.24.tar.gz#md5=e71235732f43f5f19d71cfaf3b45ff0c
   sha256: {{ sha256 }}
 
 build:
