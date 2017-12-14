@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/1e/00/9910dd324f32582051d0ee6922c3cd4727234aae96366f3867c46a70cd78/fastcluster-1.1.24.tar.gz#md5=e71235732f43f5f19d71cfaf3b45ff0c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -19,7 +19,7 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy 1.9.*  # [not (win and (py35 or py36))]
+    - numpy 1.8.*  # [not (win and (py35 or py36))]
     - numpy 1.9.*  # [win and py35]
     - numpy 1.11.*  # [win and py36]
     - toolchain
