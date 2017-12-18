@@ -1,6 +1,6 @@
 {% set name = "fastcluster" %}
-{% set version = "1.1.23" %}
-{% set sha256 = "dfcd192d4cd53cd0db27f9d86dc3c49d3a15e6114ff875428c367b8bd679e318" %}
+{% set version = "1.1.24" %}
+{% set sha256 = "a5d1922b1db6f4c3012416e7dc14de2984b9335a48c895e1698afd5c718312b0" %}
 
 package:
   name: {{ name|lower }}
@@ -19,11 +19,15 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.8.*  # [not (win and (py35 or py36))]
+    - numpy 1.9.*  # [win and py35]
+    - numpy 1.11.*  # [win and py36]
     - toolchain
   run:
     - python
-    - numpy x.x
+    - numpy >=1.9  # [not (win and (py35 or py36))]
+    - numpy >=1.9  # [win and py35]
+    - numpy >=1.11  # [win and py36]
 
 test:
   imports:
