@@ -1,6 +1,6 @@
 {% set name = "fastcluster" %}
-{% set version = "1.1.25" %}
-{% set sha256 = "539d84d43fbe541a38d94c84bf0469c430cb7cda488364941ce57f680a07b091" %}
+{% set version = "1.1.26" %}
+{% set sha256 = "a202f44a3b06f5cf9cdba3c67d6c523288922d6e6a1cdf737292f93759aa82f7" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
