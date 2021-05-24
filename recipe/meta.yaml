@@ -1,6 +1,6 @@
 {% set name = "fastcluster" %}
-{% set version = "1.1.26" %}
-{% set sha256 = "a202f44a3b06f5cf9cdba3c67d6c523288922d6e6a1cdf737292f93759aa82f7" %}
+{% set version = "1.2.1" %}
+{% set sha256 = "62df4a7895f459b34ddc918f406e38556cce1c3017637d02eff1949f5a810757" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -35,7 +35,7 @@ about:
   home: http://danifold.net/fastcluster.html
   license: BSD-2-Clause
   license_file: COPYING.txt
-  summary: 'Fast hierarchical clustering routines for R and Python.'
+  summary: Fast hierarchical clustering routines for R and Python.
   description: |
     This library provides Python functions for hierarchical clustering. It generates hierarchical
     clusters from distance matrices or from vector data.
