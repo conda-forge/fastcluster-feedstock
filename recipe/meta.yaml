@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
@@ -21,7 +21,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
-    - setuptools
+    - pip
     - numpy
   run:
     - python
@@ -53,3 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - mpharrigan
+    - synapticarbors
