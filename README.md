@@ -229,4 +229,5 @@ Feedstock Maintainers
 =====================
 
 * [@mpharrigan](https://github.com/mpharrigan/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
