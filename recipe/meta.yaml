@@ -1,6 +1,6 @@
 {% set name = "fastcluster" %}
-{% set version = "1.2.4" %}
-{% set sha256 = "b5697a26b5397004bba4ac6308e9e9b7a832dcccfcc0333554bc3898a55601a3" %}
+{% set version = "1.2.6" %}
+{% set sha256 = "aab886efa7b6bba7ac124f4498153d053e5a08b822d2254926b7206cdf5a8aa6" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
