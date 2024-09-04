@@ -12,12 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
