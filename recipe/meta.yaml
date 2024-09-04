@@ -23,6 +23,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
     - numpy
   run:
     - python
