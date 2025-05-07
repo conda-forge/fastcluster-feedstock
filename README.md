@@ -24,7 +24,6 @@ Moreover, the function linkage_vector provides memory-efficient clustering for v
 The interface is very similar to MATLAB’s Statistics Toolbox API to make code easier to
 port from MATLAB to Python/NumPy. The core implementation of this library is in C++ for efficiency.
 
-
 Current build status
 ====================
 
